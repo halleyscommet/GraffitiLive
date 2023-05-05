@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url("Fonts/Rubik/Rubik-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+padbreak {
+  padding: 10px;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: lightslategray;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./Decive.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+body p {
+  text-align: center;
+  color: white;
+}
+
+.main-image {
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  justify-content: center;
+}
+
+nav img {
+  max-width: 15%;
+  height: auto;
+  margin-top: 8px;
+  border-width: 2px;
+}
+
+nav a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a.active {
+  background-color: #5533ff;
+}
+
+.spin {
+  animation: spin 1s linear;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-20%);
+  }
+  to {
+    transform: translateX(-243%);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Join-Canvas-Form {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: auto;
+}
+
+.Join-Canvas {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 7px;
+  font-size: 200%;
+  border-color: #1f1f1f;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(165, 165, 165);
+}
+
+button {
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #5533ff;
+  border-color: #11054d;
+  color: whitesmoke;
+  font-size: 200%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
