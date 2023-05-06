@@ -114,4 +114,14 @@ button {
   font-size: 200%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d144d;
+}
+
+button:active {
+  background-color: #2b2b2b;
+  border-color: #2b2b2b;
 }
